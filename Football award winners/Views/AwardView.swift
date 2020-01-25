@@ -19,11 +19,9 @@ struct AwardView: View {
         Button(action: {
             
         }) {
-            Text(awardName)
+            Text(awardName).padding(.all, 6)
             .foregroundColor(Color(goldColor))
             .background(Color(backgroundColor))
-                .padding(.all, 8)
-                .border(Color(backgroundColor), width: 3)
             .cornerRadius(12)
             
         }

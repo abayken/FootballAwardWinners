@@ -22,7 +22,7 @@ struct ContentView: View {
                     AwardView(awardName: "France football")
                     AwardView(awardName: "FIFA")
                     AwardView(awardName: "UEFA")
-                }
+                }.padding(.leading, 16)
                 
                 List (winners) { winner in
                     WinnerView(winner: winner)

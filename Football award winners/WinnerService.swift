@@ -14,14 +14,31 @@ class WinnerService: ObservableObject {
     
     @Published var awardWinners: [Winner] = []
     
+    
+    
     init() {
         fetch()
     }
     
-    private func fetch() {
-        awardWinners.append(Winner(id: 1, fullName: "Leo Messi", imageName: "leo", yearWon: "2019", description: "Best in the world"))
-        awardWinners.append(Winner(id: 2, fullName: "Luka Modric", imageName: "lula", yearWon: "2018", description: "The yeat another genius"))
-        awardWinners.append(Winner(id: 3, fullName: "Sergio Aguero", imageName: "leo", yearWon: "2011", description: "One of the best strikers"))
+    private func fetch(by awardId: Int = 1) {
+        
+        if let url = Bundle.main.url(forResource: "awards", withExtension: "json") {
+            
+            if let data = try? Data(contentsOf: url) {
+                
+                if let parsed = try? JSONDecoder().decode([Winner].self, from: data) {
+                    self.awardWinners = parsed.filter {
+                        $0.award == awardId
+                    }
+                }
+                
+            }
+            
+        }
+    }
+    
+    func updateWinners(by id: Int) {
+        fetch(by: id)
     }
     
 }

@@ -13,10 +13,11 @@ struct WinnerView: View {
     
     var body: some View {
         HStack {
-            Text(winner.yearWon).font(.largeTitle)
+            Image(winner.imageName).resizable().frame(width: 100, height: 150).aspectRatio(contentMode: .fit).cornerRadius(6)
+            Text(String(winner.yearWon)).font(.title)
             VStack(alignment: .leading) {
-                Text(winner.fullName).font(.title)
-                Text(winner.description).font(.subheadline)
+                Text(winner.fullName).font(.system(size: 20))
+                Text(winner.description).font(.system(size: 14)).foregroundColor(Color(UIColor.darkGray))
             }.padding(.leading, 8)
         }
         
@@ -25,6 +26,6 @@ struct WinnerView: View {
 
 struct WinnerView_Previews: PreviewProvider {
     static var previews: some View {
-        WinnerView(winner: Winner(id: 1, fullName: "Lionel Messi", imageName: "messi", yearWon: "2019", description: "From another planet"))
+        WinnerView(winner: Winner(id: 1, fullName: "few", imageName: "few", yearWon: 12, description: "fewf", award: 1))
     }
 }

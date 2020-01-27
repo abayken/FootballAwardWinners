@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2CB93C2D23DEB0DD00312CA4 /* WinnerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB93C2C23DEB0DD00312CA4 /* WinnerService.swift */; };
+		2CB93C2F23DEC13E00312CA4 /* awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CB93C2E23DEC13D00312CA4 /* awards.json */; };
 		C7F877DE23DC1A550001080C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F877DD23DC1A550001080C /* AppDelegate.swift */; };
 		C7F877E023DC1A550001080C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F877DF23DC1A550001080C /* SceneDelegate.swift */; };
 		C7F877E223DC1A550001080C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F877E123DC1A550001080C /* ContentView.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		2CB93C2C23DEB0DD00312CA4 /* WinnerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerService.swift; sourceTree = "<group>"; };
+		2CB93C2E23DEC13D00312CA4 /* awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awards.json; sourceTree = "<group>"; };
 		C7F877DA23DC1A550001080C /* Football award winners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football award winners.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F877DD23DC1A550001080C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7F877DF23DC1A550001080C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 		C7F877DC23DC1A550001080C /* Football award winners */ = {
 			isa = PBXGroup;
 			children = (
+				2CB93C2E23DEC13D00312CA4 /* awards.json */,
 				C7F877F623DC1E750001080C /* Models */,
 				C7F877F123DC1A810001080C /* Views */,
 				C7F877DD23DC1A550001080C /* AppDelegate.swift */,
@@ -162,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7F877EA23DC1A570001080C /* LaunchScreen.storyboard in Resources */,
+				2CB93C2F23DEC13E00312CA4 /* awards.json in Resources */,
 				C7F877E723DC1A570001080C /* Preview Assets.xcassets in Resources */,
 				C7F877E423DC1A570001080C /* Assets.xcassets in Resources */,
 			);

@@ -18,9 +18,9 @@ struct ContentView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 HStack {
-                    AwardView(awardName: "France football")
-                    AwardView(awardName: "FIFA")
-                    AwardView(awardName: "UEFA")
+                    AwardView(awardName: "France football", delegate: self, awardId: 1)
+                    AwardView(awardName: "FIFA", delegate: self, awardId: 2)
+                    AwardView(awardName: "UEFA", delegate: self, awardId: 3)
                 }.padding(.leading, 16)
                 
                 List (service.awardWinners) { winner in
@@ -30,6 +30,14 @@ struct ContentView: View {
             }
         }
     }
+}
+
+extension ContentView: AwardAction {
+    
+    func awardPressed(id: Int) {
+        service.updateWinners(by: id)
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

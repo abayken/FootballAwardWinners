@@ -8,10 +8,11 @@
 
 import Foundation
 
-struct Winner: Identifiable {
+struct Winner: Identifiable, Codable {
     let id: Int
     let fullName: String
     let imageName: String
-    let yearWon: String
+    let yearWon: Int
     let description: String
+    let award: Int
 }

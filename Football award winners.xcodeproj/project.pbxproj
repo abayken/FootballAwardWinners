@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CB93C2D23DEB0DD00312CA4 /* WinnerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB93C2C23DEB0DD00312CA4 /* WinnerService.swift */; };
 		C7F877DE23DC1A550001080C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F877DD23DC1A550001080C /* AppDelegate.swift */; };
 		C7F877E023DC1A550001080C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F877DF23DC1A550001080C /* SceneDelegate.swift */; };
 		C7F877E223DC1A550001080C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F877E123DC1A550001080C /* ContentView.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2CB93C2C23DEB0DD00312CA4 /* WinnerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerService.swift; sourceTree = "<group>"; };
 		C7F877DA23DC1A550001080C /* Football award winners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football award winners.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F877DD23DC1A550001080C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7F877DF23DC1A550001080C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				C7F877E823DC1A570001080C /* LaunchScreen.storyboard */,
 				C7F877EB23DC1A570001080C /* Info.plist */,
 				C7F877E523DC1A570001080C /* Preview Content */,
+				2CB93C2C23DEB0DD00312CA4 /* WinnerService.swift */,
 			);
 			path = "Football award winners";
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				C7F877DE23DC1A550001080C /* AppDelegate.swift in Sources */,
 				C7F877E023DC1A550001080C /* SceneDelegate.swift in Sources */,
 				C7F877F823DC1E800001080C /* Winner.swift in Sources */,
+				2CB93C2D23DEB0DD00312CA4 /* WinnerService.swift in Sources */,
 				C7F877E223DC1A550001080C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

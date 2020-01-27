@@ -7,12 +7,11 @@
 //
 
 import SwiftUI
+import Combine
 
 struct ContentView: View {
     
-    var winners = [Winner(id: 1, fullName: "Leo Messi", imageName: "leo", yearWon: "2019", description: "Best in the world"),
-                   Winner(id: 2, fullName: "Luka Modric", imageName: "lula", yearWon: "2018", description: "The yeat another genius")
-    ]
+    @ObservedObject var service: WinnerService = WinnerService()
     
     var body: some View {
         
@@ -24,7 +23,7 @@ struct ContentView: View {
                     AwardView(awardName: "UEFA")
                 }.padding(.leading, 16)
                 
-                List (winners) { winner in
+                List (service.awardWinners) { winner in
                     WinnerView(winner: winner)
                 }.navigationBarTitle("Winners")
                 

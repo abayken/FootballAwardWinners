@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C633D1D23DEDC34003B038D /* WinnerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C633D1C23DEDC34003B038D /* WinnerDetailView.swift */; };
 		2CB93C2D23DEB0DD00312CA4 /* WinnerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB93C2C23DEB0DD00312CA4 /* WinnerService.swift */; };
 		2CB93C2F23DEC13E00312CA4 /* awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CB93C2E23DEC13D00312CA4 /* awards.json */; };
 		C7F877DE23DC1A550001080C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F877DD23DC1A550001080C /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C633D1C23DEDC34003B038D /* WinnerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerDetailView.swift; sourceTree = "<group>"; };
 		2CB93C2C23DEB0DD00312CA4 /* WinnerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerService.swift; sourceTree = "<group>"; };
 		2CB93C2E23DEC13D00312CA4 /* awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awards.json; sourceTree = "<group>"; };
 		C7F877DA23DC1A550001080C /* Football award winners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football award winners.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +96,7 @@
 			children = (
 				C7F877F223DC1A8D0001080C /* AwardView.swift */,
 				C7F877F423DC1E660001080C /* WinnerView.swift */,
+				2C633D1C23DEDC34003B038D /* WinnerDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			files = (
 				C7F877F523DC1E660001080C /* WinnerView.swift in Sources */,
 				C7F877F323DC1A8D0001080C /* AwardView.swift in Sources */,
+				2C633D1D23DEDC34003B038D /* WinnerDetailView.swift in Sources */,
 				C7F877DE23DC1A550001080C /* AppDelegate.swift in Sources */,
 				C7F877E023DC1A550001080C /* SceneDelegate.swift in Sources */,
 				C7F877F823DC1E800001080C /* Winner.swift in Sources */,

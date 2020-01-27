@@ -17,7 +17,7 @@ struct WinnerView: View {
             Text(String(winner.yearWon)).font(.title)
             VStack(alignment: .leading) {
                 Text(winner.fullName).font(.system(size: 20))
-                Text(winner.description).font(.system(size: 14)).foregroundColor(Color(UIColor.darkGray))
+                Text(winner.description).font(.system(size: 14)).foregroundColor(Color(UIColor.darkGray)).lineLimit(3)
             }.padding(.leading, 8)
         }
         

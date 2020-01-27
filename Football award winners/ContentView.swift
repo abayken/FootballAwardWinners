@@ -14,7 +14,6 @@ struct ContentView: View {
     @ObservedObject var service: WinnerService = WinnerService()
     
     var body: some View {
-        
         NavigationView {
             VStack(alignment: .leading) {
                 HStack {
@@ -24,7 +23,9 @@ struct ContentView: View {
                 }.padding(.leading, 16)
                 
                 List (service.awardWinners) { winner in
-                    WinnerView(winner: winner)
+                    NavigationLink(destination: WinnerDetailView(winner: winner)) {
+                        WinnerView(winner: winner)
+                    }
                 }.navigationBarTitle("Winners")
                 
             }

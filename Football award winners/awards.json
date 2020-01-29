@@ -1,57 +1,25 @@
 [
     {
-    "id": 1, 
-    "fullName": "Leo Messi", 
-    "imageName": "leo", 
-    "yearWon": 2019, 
-    "description": "Best in the world", 
-    "award": 1
-    }, 
-
-    {
-        "id": 2, 
-        "fullName": "Luka Modric", 
-        "imageName": "luka",
-        "yearWon": 2018, 
-        "description": "Genius from Croation", 
-        "award": 1
-    },
-    
-    {
-        "id": 3,
-        "fullName": "Cristiano Ronaldo",
-        "imageName": "cristiano",
-        "yearWon": 2017,
-        "description": "Portugese",
-        "award": 1
-    },
-    
-    {
-        "id": 4,
-        "fullName": "Cristiano Ronaldo",
-        "imageName": "cristiano",
-        "yearWon": 2016,
-        "description": "Portugese",
-        "award": 1
-    },
-    
-    {
-        "id": 5,
-        "fullName": "Lionel Messi",
-        "imageName": "leo",
-        "yearWon": 2015,
-        "description": "fewfwef",
-        "award": 1
-    },
-    
-    {
-        
         "id": 1,
-        "fullName": "Lionel Messi",
-        "imageName": "leo",
-        "yearWon": 2019,
-        "description": "Alien",
-        "award": 2
+        "year": 2019,
+        "winner": {
+            "id": 1,
+            "fullName": "Leo Messi",
+            "imageName": "leo-baloon",
+            "description": "Best in the world",
+            "link": "https://en.wikipedia.org/wiki/Lionel_Messi"
+        },
+        "prize": [
+            {
+                "id": 1,
+                "place": 2,
+                "name": "Virjil Vandijk"
+            },
+            {
+                "id": 2,
+                "place": 3,
+                "name": "Cristiano Ronaldo"
+            }
+        ]
     }
-    
 ]

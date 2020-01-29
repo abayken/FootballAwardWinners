@@ -11,14 +11,16 @@ import SwiftUI
 struct WinnerView: View {
     let winner: Winner
     
+    let yearWon: Int
+    
     var body: some View {
         HStack {
-            Image(winner.imageName).resizable().frame(width: 100, height: 150).aspectRatio(contentMode: .fit).cornerRadius(6)
-            Text(String(winner.yearWon)).font(.title)
+            Image(winner.imageName).resizable().aspectRatio(contentMode: ContentMode.fit).cornerRadius(6).frame(width: 120, height: 160)
+            Text(String(yearWon)).font(.system(size: 18)).bold()
             VStack(alignment: .leading) {
                 Text(winner.fullName).font(.system(size: 20))
                 Text(winner.description).font(.system(size: 14)).foregroundColor(Color(UIColor.darkGray)).lineLimit(3)
-            }.padding(.leading, 8)
+            }.padding(.leading, CGFloat(8))
         }
         
     }
@@ -26,6 +28,6 @@ struct WinnerView: View {
 
 struct WinnerView_Previews: PreviewProvider {
     static var previews: some View {
-        WinnerView(winner: Winner(id: 1, fullName: "few", imageName: "few", yearWon: 12, description: "fewf", award: 1))
+        WinnerView(winner: Winner(id: 1, fullName: "FEWF", imageName: "FEWF", description: "FEW", link: "FEWFWEF"), yearWon: 11)
     }
 }

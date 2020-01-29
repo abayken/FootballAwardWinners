@@ -12,7 +12,7 @@ import Combine
 
 class WinnerService: ObservableObject {
     
-    @Published var awardWinners: [Winner] = []
+    @Published var awards: [Award] = []
     
     
     
@@ -26,10 +26,12 @@ class WinnerService: ObservableObject {
             
             if let data = try? Data(contentsOf: url) {
                 
-                if let parsed = try? JSONDecoder().decode([Winner].self, from: data) {
-                    self.awardWinners = parsed.filter {
-                        $0.award == awardId
+                if let parsed = try? JSONDecoder().decode([Award].self, from: data) {
+                    
+                    awards = parsed.filter {
+                        $0.id == awardId
                     }
+                    
                 }
                 
             }

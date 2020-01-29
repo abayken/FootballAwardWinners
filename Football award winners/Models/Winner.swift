@@ -12,7 +12,6 @@ struct Winner: Identifiable, Codable {
     let id: Int
     let fullName: String
     let imageName: String
-    let yearWon: Int
     let description: String
-    let award: Int
+    let link: String? 
 }

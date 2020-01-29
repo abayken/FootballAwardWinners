@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2C633D1D23DEDC34003B038D /* WinnerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C633D1C23DEDC34003B038D /* WinnerDetailView.swift */; };
+		2C633D1F23DEFC5D003B038D /* PrizeWinnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C633D1E23DEFC5D003B038D /* PrizeWinnerView.swift */; };
 		2CB93C2D23DEB0DD00312CA4 /* WinnerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB93C2C23DEB0DD00312CA4 /* WinnerService.swift */; };
 		2CB93C2F23DEC13E00312CA4 /* awards.json in Resources */ = {isa = PBXBuildFile; fileRef = 2CB93C2E23DEC13D00312CA4 /* awards.json */; };
+		2CE32D5123E170E700BC777A /* PrizeWinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE32D5023E170E700BC777A /* PrizeWinner.swift */; };
+		2CE32D5323E1718800BC777A /* Award.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CE32D5223E1718800BC777A /* Award.swift */; };
 		C7F877DE23DC1A550001080C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F877DD23DC1A550001080C /* AppDelegate.swift */; };
 		C7F877E023DC1A550001080C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F877DF23DC1A550001080C /* SceneDelegate.swift */; };
 		C7F877E223DC1A550001080C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F877E123DC1A550001080C /* ContentView.swift */; };
@@ -23,8 +26,11 @@
 
 /* Begin PBXFileReference section */
 		2C633D1C23DEDC34003B038D /* WinnerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerDetailView.swift; sourceTree = "<group>"; };
+		2C633D1E23DEFC5D003B038D /* PrizeWinnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeWinnerView.swift; sourceTree = "<group>"; };
 		2CB93C2C23DEB0DD00312CA4 /* WinnerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnerService.swift; sourceTree = "<group>"; };
 		2CB93C2E23DEC13D00312CA4 /* awards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awards.json; sourceTree = "<group>"; };
+		2CE32D5023E170E700BC777A /* PrizeWinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrizeWinner.swift; sourceTree = "<group>"; };
+		2CE32D5223E1718800BC777A /* Award.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Award.swift; sourceTree = "<group>"; };
 		C7F877DA23DC1A550001080C /* Football award winners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Football award winners.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7F877DD23DC1A550001080C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7F877DF23DC1A550001080C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +103,7 @@
 				C7F877F223DC1A8D0001080C /* AwardView.swift */,
 				C7F877F423DC1E660001080C /* WinnerView.swift */,
 				2C633D1C23DEDC34003B038D /* WinnerDetailView.swift */,
+				2C633D1E23DEFC5D003B038D /* PrizeWinnerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -105,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				C7F877F723DC1E800001080C /* Winner.swift */,
+				2CE32D5023E170E700BC777A /* PrizeWinner.swift */,
+				2CE32D5223E1718800BC777A /* Award.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -184,10 +193,13 @@
 				C7F877F523DC1E660001080C /* WinnerView.swift in Sources */,
 				C7F877F323DC1A8D0001080C /* AwardView.swift in Sources */,
 				2C633D1D23DEDC34003B038D /* WinnerDetailView.swift in Sources */,
+				2CE32D5323E1718800BC777A /* Award.swift in Sources */,
 				C7F877DE23DC1A550001080C /* AppDelegate.swift in Sources */,
 				C7F877E023DC1A550001080C /* SceneDelegate.swift in Sources */,
 				C7F877F823DC1E800001080C /* Winner.swift in Sources */,
 				2CB93C2D23DEB0DD00312CA4 /* WinnerService.swift in Sources */,
+				2CE32D5123E170E700BC777A /* PrizeWinner.swift in Sources */,
+				2C633D1F23DEFC5D003B038D /* PrizeWinnerView.swift in Sources */,
 				C7F877E223DC1A550001080C /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

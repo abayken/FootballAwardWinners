@@ -13,13 +13,24 @@ struct ContentView: View {
     
     @ObservedObject var service: WinnerService = WinnerService()
     
+    @State
+    private var awardList = [
+        AwardViewModel(awardName: "Baloon Door", id: 1, isSelected: true),
+        AwardViewModel(awardName: "FIFA The Best", id: 2, isSelected: false),
+        AwardViewModel(awardName: "UEFA", id: 3, isSelected: false)
+    ]
+    
+    @State
+    var selectedPosition = 0
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
-                HStack {
-                    AwardView(awardName: "Baloon Door", delegate: self, awardId: 1)
-                    AwardView(awardName: "FIFA The Best", delegate: self, awardId: 2)
-                    AwardView(awardName: "UEFA", delegate: self, awardId: 3)
+                HStack {                    
+                    ForEach(awardList) { awardViewModel in
+                        AwardView(awardViewModel: awardViewModel, delegate: self)
+                    }
+                    
                 }.padding(.leading, 16)
                 
                 List (service.awards) { award in
@@ -43,6 +54,9 @@ struct ContentView: View {
 extension ContentView: AwardAction {
     
     func awardPressed(id: Int) {
+        awardList[selectedPosition].isSelected = false
+        selectedPosition = id - 1
+        awardList[selectedPosition].isSelected = true
         service.updateWinners(by: id)
     }
     

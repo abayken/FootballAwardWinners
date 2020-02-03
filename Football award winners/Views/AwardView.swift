@@ -9,9 +9,10 @@
 import SwiftUI
 
 struct AwardView: View {
-    let awardName: String
-    var delegate: AwardAction?
-    let awardId: Int
+    
+    let awardViewModel: AwardViewModel
+    
+    let delegate: AwardAction?
     
     let goldColor = UIColor(red:0.85, green:0.71, blue:0.36, alpha:1.0)
     
@@ -21,26 +22,32 @@ struct AwardView: View {
         Button(action: {
             self.notifyToUpdateList()
         }) {
-            Text(awardName).padding(.all, 6)
+            Text(awardViewModel.awardName).padding(.all, 6)
             .foregroundColor(Color(goldColor))
-            .background(Color(backgroundColor))
+                .background(awardViewModel.isSelected ? Color(backgroundColor) : Color.black)
             .cornerRadius(12)
             
         }
     }
     
     private func notifyToUpdateList() {
-        delegate?.awardPressed(id: awardId)
+        delegate?.awardPressed(id: awardViewModel.id)
     }
     
 }
 
 struct AwardView_Previews: PreviewProvider {
     static var previews: some View {
-        AwardView(awardName: "France Football", delegate: nil, awardId: 2)
+        AwardView(awardViewModel: AwardViewModel(awardName: "fewjif", id: 1, isSelected: true), delegate: nil)
     }
 }
 
 protocol AwardAction {
     func awardPressed(id: Int)
+}
+
+struct AwardViewModel: Identifiable {
+    let awardName: String
+    let id: Int
+    var isSelected: Bool
 }
